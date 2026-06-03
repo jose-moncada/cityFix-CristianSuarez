@@ -7,6 +7,7 @@ describe("CityFix E2E Live Network", () => {
         const reports = await getReports();
 
         console.log("Cantidad de reportes:", reports.length);
+        console.log("Reportes:", reports);
 
         expect(Array.isArray(reports)).toBe(true);
         expect(reports.length).toBeGreaterThan(0);
